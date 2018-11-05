@@ -1,0 +1,12 @@
+cc_library(
+    name = "vowpalwabbit",
+    hdrs = glob(["*.h"], exclude=["primitives.h"]),
+    srcs = glob(["*.cc"], exclude=["main.cc", "primitives.cc"]),
+    deps = [
+        "//explore",
+        "//rapidjson/include/rapidjson",
+        "//third_party/boost",
+    ],
+    alwayslink = True,
+    visibility = ["//visibility:public"],
+)

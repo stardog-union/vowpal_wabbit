@@ -17,7 +17,6 @@ ltmain.sh
 missing
 vowpalwabbit/Makefile.in
 vowpalwabbit/config.h.in
-config.h
 *.la
 *.lo
 vowpalwabbit/stamp-*

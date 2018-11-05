@@ -1,0 +1,55 @@
+cc_library(
+    name = "vowpal_wabbit",
+    deps = [
+        "//java/src/main/c++:jni",
+    ],
+    alwayslink = True,
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "libvw_jni.so",
+    deps = [
+        ":vowpal_wabbit_static",
+    ],
+    linkshared = True,
+    linkopts = [
+        "-static-libgcc",
+        "-static-libstdc++",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "libvw_jni.dylib",
+    deps = [
+        ":vowpal_wabbit_static",
+    ],
+    linkshared = True,
+    linkopts = [
+        "-static-libstdc++",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "libvw_jni.dll",
+    deps = [
+        ":vowpal_wabbit_static",
+    ],
+    linkshared = True,
+    linkopts = [
+        "-static-libgcc",
+        "-static-libstdc++",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "vowpal_wabbit_static",
+    deps = [
+        ":vowpal_wabbit",
+    ],
+    linkstatic = True,
+    alwayslink = True,
+)

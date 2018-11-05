@@ -1,0 +1,37 @@
+JNI_SRCS = select({
+    "@toolchain//:linux-native": [
+        "@local_jdk//:jni_header",
+        "@local_jdk//:jni_md_header-linux",
+    ],
+    "@toolchain//:osx-native": [
+        "@local_jdk//:jni_header",
+        "@local_jdk//:jni_md_header-darwin",
+    ],
+    "@toolchain//:windows-native": [],
+    "@toolchain//:cross-compile": [],
+})
+
+JNI_INCLUDES = select({
+    # Note: Due to https://github.com/bazelbuild/bazel/issues/5497, we have to use '..' to get to the root directory.
+    "@toolchain//:linux-native": [
+        "../../../../external/local_jdk/include",
+        "../../../../external/local_jdk/include/linux",
+    ],
+    "@toolchain//:osx-native": [
+        "../../../../external/local_jdk/include",
+        "../../../../external/local_jdk/include/darwin",
+    ],
+    "@toolchain//:windows-native": [],
+    "@toolchain//:cross-compile": [],
+})
+
+cc_library(
+    name = "jni",
+    hdrs = glob(["*.h"]),
+    srcs = glob(["*.cc"]) + JNI_SRCS,
+    deps = [
+        "//vowpalwabbit",
+    ],
+    includes = JNI_INCLUDES,
+    visibility = ["//visibility:public"],
+)

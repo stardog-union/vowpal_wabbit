@@ -1,0 +1,897 @@
+Starting local Bazel server and connecting to it...
+Loading: 
+Loading: 0 packages loaded
+INFO: SHA256 (file:/home/james/git/toolchain.tgz) = bf27d37d631fea0505f8f4aa8b84e89d61f3f87b14eb9386013bd358f4b1b56a
+Analyzing: 2 targets (4 packages loaded)
+INFO: SHA256 (file:/home/james/git/gtest.tgz) = 058379529d51cb8c7eb5a6b52e138ac286171f27b98872a2885aaa4b085cf024
+INFO: Analysed 2 targets (11 packages loaded).
+INFO: Found 2 targets...
+[0 / 14] [-----] Writing file third_party/gtest/compile_test-2.params
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-filepath.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-filepath.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-port.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-port.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-test-part.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-test-part.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o)
+SUBCOMMAND: # //third_party/gtest:compile_test [action 'Compiling third_party/gtest/compile_test.cpp']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.d '-frandom-seed=bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o' -iquote . -iquote bazel-out/k8-fastbuild/genfiles -iquote bazel-out/k8-fastbuild/bin -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c third_party/gtest/compile_test.cpp -o bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googlemock/src/gmock.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googlemock/src/gmock-matchers.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock-matchers.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o)
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googlemock/src/gmock-spec-builders.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock-spec-builders.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o)
+[6 / 25] Compiling external/com_google_googletest/googletest/src/gtest-filepath.cc; 1s linux-sandbox ... (8 actions running)
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-filepath.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-filepath.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-filepath.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-filepath.o
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googlemock/src/gmock-internal-utils.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock-internal-utils.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o)
+INFO: From Compiling third_party/gtest/compile_test.cpp:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o
+Arg: -iquote
+Arg: .
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: third_party/gtest/compile_test.cpp
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.d -frandom-seed=bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o -iquote . -iquote bazel-out/k8-fastbuild/genfiles -iquote bazel-out/k8-fastbuild/bin -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c third_party/gtest/compile_test.cpp -o bazel-out/k8-fastbuild/bin/third_party/gtest/_objs/compile_test/compile_test.o
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googlemock/src/gmock-cardinalities.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock-cardinalities.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o)
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-port.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-port.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-port.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-port.o
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-printers.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-printers.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o)
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock.o
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-death-test.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-death-test.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o)
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-test-part.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-test-part.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-test-part.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-test-part.o
+SUBCOMMAND: # @com_google_googletest//:gtest [action 'Compiling external/com_google_googletest/googletest/src/gtest-typed-test.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googletest/src/gtest-typed-test.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o)
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock-matchers.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock-matchers.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock-matchers.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-matchers.o
+[12 / 25] Compiling external/com_google_googletest/googletest/src/gtest.cc; 2s linux-sandbox ... (8 actions, 7 running)
+SUBCOMMAND: # @com_google_googletest//:gtest_main [action 'Compiling external/com_google_googletest/googlemock/src/gmock_main.cc']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O '-std=c++14' -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.d '-frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o' -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/com_google_googletest/googlemock/src/gmock_main.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o)
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock-internal-utils.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock-internal-utils.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock-internal-utils.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-internal-utils.o
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock-cardinalities.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock-cardinalities.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock-cardinalities.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-cardinalities.o
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-printers.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-printers.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-printers.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-printers.o
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock-spec-builders.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock-spec-builders.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock-spec-builders.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gmock-spec-builders.o
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-typed-test.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-typed-test.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-typed-test.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-typed-test.o
+INFO: From Compiling external/com_google_googletest/googletest/src/gtest-death-test.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: -pthread
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googletest/src/gtest-death-test.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include -pthread --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googletest/src/gtest-death-test.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest/gtest-death-test.o
+INFO: From Compiling external/com_google_googletest/googlemock/src/gmock_main.cc:
+Arg: -U_FORTIFY_SOURCE
+Arg: -fstack-protector
+Arg: -Wall
+Arg: -fno-omit-frame-pointer
+Arg: -g
+Arg: -O
+Arg: -std=c++14
+Arg: -MD
+Arg: -MF
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.d
+Arg: -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+Arg: -iquote
+Arg: external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest
+Arg: -iquote
+Arg: external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/genfiles/external/bazel_tools
+Arg: -iquote
+Arg: bazel-out/k8-fastbuild/bin/external/bazel_tools
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock
+Arg: -isystem
+Arg: external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include
+Arg: -isystem
+Arg: external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest
+Arg: -isystem
+Arg: external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include
+Arg: -isystem
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wno-builtin-macro-redefined
+Arg: -D__DATE__="redacted"
+Arg: -D__TIMESTAMP__="redacted"
+Arg: -D__TIME__="redacted"
+Arg: -c
+Arg: external/com_google_googletest/googlemock/src/gmock_main.cc
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -U_FORTIFY_SOURCE -fstack-protector -Wall -fno-omit-frame-pointer -g -O -std=c++14 -MD -MF bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.d -frandom-seed=bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o -iquote external/com_google_googletest -iquote bazel-out/k8-fastbuild/genfiles/external/com_google_googletest -iquote bazel-out/k8-fastbuild/bin/external/com_google_googletest -iquote external/bazel_tools -iquote bazel-out/k8-fastbuild/genfiles/external/bazel_tools -iquote bazel-out/k8-fastbuild/bin/external/bazel_tools -isystem external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock -isystem external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googlemock/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googlemock/include -isystem external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest -isystem external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/genfiles/external/com_google_googletest/googletest/include -isystem bazel-out/k8-fastbuild/bin/external/com_google_googletest/googletest/include --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wno-builtin-macro-redefined -D__DATE__="redacted" -D__TIMESTAMP__="redacted" -D__TIME__="redacted" -c external/com_google_googletest/googlemock/src/gmock_main.cc -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+[19 / 25] Compiling external/com_google_googletest/googletest/src/gtest.cc; 3s linux-sandbox ... (2 actions, 1 running)
+SUBCOMMAND: # @com_google_googletest//:gtest_main [action 'Linking external/com_google_googletest/libgtest_main.so']
+(cd /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/execroot/stardog && \
+  exec env - \
+    PATH=/home/james/IntelliJ_IDEA/idea/bin:/home/james/bin:/home/james/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/james/git/stardog/dist/bin \
+    PWD=/proc/self/cwd \
+  external/toolchain/cpp/target_osx/cc_wrapper.sh -shared -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/libgtest_main.so -Wl,-S '--sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk' -Wl,@bazel-out/k8-fastbuild/bin/external/com_google_googletest/libgtest_main.so-2.params)
+ERROR: /home/james/.cache/bazel/_bazel_james/f30fe179acc75b8fddcf8f4dc2e4d403/external/com_google_googletest/BUILD.bazel:119:1: Linking of rule '@com_google_googletest//:gtest_main' failed (Exit 1)
+Arg: -shared
+Arg: -o
+Arg: bazel-out/k8-fastbuild/bin/external/com_google_googletest/libgtest_main.so
+Arg: -Wl,-S
+Arg: --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk
+Arg: -Wl,@bazel-out/k8-fastbuild/bin/external/com_google_googletest/libgtest_main.so-2.params
+File:
+bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+Line: bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+Result: /opt/osxcross/target/bin/x86_64-apple-darwin15-clang++-libc++ -shared -o bazel-out/k8-fastbuild/bin/external/com_google_googletest/libgtest_main.so -Wl,-S --sysroot=/opt/osxcross/target/SDK/MacOSX10.11.sdk -Wl,bazel-out/k8-fastbuild/bin/external/com_google_googletest/_objs/gtest_main/gmock_main.o
+Undefined symbols for architecture x86_64:
+  "testing::InitGoogleMock(int*, char**)", referenced from:
+      _main in gmock_main.o
+  "testing::UnitTest::GetInstance()", referenced from:
+      _main in gmock_main.o
+  "testing::UnitTest::Run()", referenced from:
+      _main in gmock_main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+INFO: Elapsed time: 5.668s, Critical Path: 3.52s
+INFO: 13 processes: 13 linux-sandbox.
+FAILED: Build did NOT complete successfully
+FAILED: Build did NOT complete successfully

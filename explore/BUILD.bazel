@@ -1,0 +1,10 @@
+cc_library(
+    name = "explore",
+    hdrs = [
+        "explore.h",
+        "explore_internal.h",
+        "hash.h",
+    ],
+    strip_include_prefix = "/explore",
+    visibility = ["//visibility:public"],
+)

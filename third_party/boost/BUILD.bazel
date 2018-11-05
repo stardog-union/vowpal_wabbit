@@ -1,0 +1,25 @@
+licenses(["notice"])
+
+cc_library(
+    name = "boost",
+    deps = [
+        "@org_boost_boost//:current_function",
+        "@org_boost_boost//:filesystem",
+        "@org_boost_boost//:program_options",
+        "@org_boost_boost//:system",
+    ],
+    visibility = ["//visibility:public"],
+    include_prefix = "boost",
+)
+
+cc_test(
+    name = "compile_test",
+    srcs = [
+        "compile_test.cpp",
+    ],
+    deps = [
+        ":boost",
+	"//third_party/gtest:gtest_main",
+    ],
+)
+

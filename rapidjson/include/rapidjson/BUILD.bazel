@@ -1,0 +1,6 @@
+cc_library(
+    name = "rapidjson",
+    hdrs = glob(["**/*.h"]),
+    strip_include_prefix = "/rapidjson/include",
+    visibility = ["//visibility:public"],
+)
